@@ -7,6 +7,7 @@ AEPOQ was created by a 14 year old kid. I created AEPOQ to study on keyboard lay
 
 <img width="544" height="723" alt="Screenshot From 2026-08-30 17-38-26" src="https://github.com/user-attachments/assets/352f2902-3ea8-4dc3-bd83-46adaff80768" />
 <img width="853" height="605" alt="Screenshot From 2026-08-30 16-52-24" src="https://github.com/user-attachments/assets/f8d90234-7ee2-40b7-942f-f98d782229e2" />
+<img width="893" height="275" alt="image" src="https://github.com/user-attachments/assets/697d5ff8-3420-4e1d-ac4f-20de70d0b31a" />
 <img width="950" height="504" alt="Screenshot From 2026-08-30 16-23-58" src="https://github.com/user-attachments/assets/3034f174-c40b-42eb-be91-b4cd7aabb938" />
 <img width="1047" height="411" alt="Screenshot From 2026-08-30 16-23-42" src="https://github.com/user-attachments/assets/0c6301dd-8b9d-40a5-bd59-1b5a462d003c" />
 <img width="1375" height="487" alt="Screenshot From 2026-08-30 16-22-54" src="https://github.com/user-attachments/assets/3eb271dc-a400-4f11-a890-68331457200b" />
