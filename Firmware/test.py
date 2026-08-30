@@ -11,10 +11,8 @@ from kmk.scanners import DiodeOrientation
 from kmk.modules.encoder import EncoderHandler
 from kmk.extensions.media_keys import MediaKeys
 
-# Initialize Keyboard
 keyboard = KMKKeyboard()
 
-# Hardware Pin Mapping (Extracted from KiCad Schematic)
 keyboard.col_pins = (
     board.GP0,  # Col 1
     board.GP1,  # Col 2
@@ -43,18 +41,16 @@ keyboard.row_pins = (
 
 keyboard.diode_orientation = DiodeOrientation.COL2ROW
 
-# Add Media Keys Extension
+
 media_keys = MediaKeys()
 keyboard.extensions.append(media_keys)
 
-# Initialize 0.91" I2C OLED Display (128x32)
 displayio.release_displays()
 i2c = busio.I2C(scl=board.GP27, sda=board.GP26)
 display_bus = displayio.I2CDisplay(i2c, device_address=0x3C)
 display = adafruit_ssd1306.SSD1306_I2C(128, 32, i2c)
 
-# Volume State Tracker
-volume_level = 50  # Initial UI volume tracking percentage
+volume_level = 50  
 is_muted = False
 
 def update_oled():
@@ -64,7 +60,6 @@ def update_oled():
         bar = "----------------"
     else:
         text = f" Volume: {volume_level}%"
-        # Render dynamic visual progress bar
         bars_filled = int((volume_level / 100) * 14)
         bar = "[" + "=" * bars_filled + " " * (14 - bars_filled) + "]"
 
@@ -72,11 +67,9 @@ def update_oled():
     display.text(text, 0, 12, 1)
     display.text(bar, 0, 24, 1)
     display.show()
-
-# Render initial screen
 update_oled()
 
-# Custom Encoder Actions with OLED Callback
+
 def volume_up(state):
     global volume_level, is_muted
     is_muted = False
@@ -97,7 +90,6 @@ def toggle_mute(state):
     keyboard.tap_key(KC.AUDIO_MUTE)
     update_oled()
 
-# Configure Rotary Encoder (GPIO20 = A, GPIO21 = B, GPIO22 = S1 Switch)
 encoder_handler = EncoderHandler()
 encoder_handler.pins = ((board.GP20, board.GP21, board.GP22, False),)
 encoder_handler.map = [
@@ -105,7 +97,6 @@ encoder_handler.map = [
 ]
 keyboard.modules.append(encoder_handler)
 
-# 65% Keymap Layout
 keyboard.keymap = [
     [
         # Row 1 (Esc to Ins)
