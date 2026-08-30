@@ -58,5 +58,7 @@ AEPOQ was created by a 14 year old kid. I created AEPOQ to study on keyboard lay
 | **JLCPCB Subtotal** | $189.44 |
 | **Grand Total** | **$273.50** |
 
+the whole build comes out to around $273, with jlcpcb taking up $189 of that. the shipping and case prices ended up pretty high because i intentionally went with a filled interior instead of hollowing it out. i've always hated light, cheap-feeling keyboards, so i wanted this build to have some serious weight to it and feel super solid on the desk even if it meant paying extra for the resin.
+
 <img width="1499" height="699" alt="image" src="https://github.com/user-attachments/assets/b5f6545b-2b5b-4a58-9cd1-c3b81ce83eb9" />
 <img width="734" height="809" alt="image" src="https://github.com/user-attachments/assets/35ce7327-6829-4432-9618-d7f56521c511" />
